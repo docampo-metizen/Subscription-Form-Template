@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>PSI | Subscription Form</title>
+    <script src="./button-success.js"></script>
 </head>
 <body>
     <main>
@@ -12,7 +13,7 @@
             <header>
                 <img src="./Assets/img/logo.png" alt="PSI Logo"> <!-- PSI Logo goes here -->
             </header>
-            <form action="https://hooks.zapier.com/hooks/catch/19697869/24u0blw/" method="POST"><!-- Zapier Webhook Goes Here -->
+            <form action="https://hooks.zapier.com/hooks/catch/19697869/24u0blw/" method="POST" onsubmit="handleFormSubmission(event)"><!-- Zapier Webhook Goes Here -->
                 <!-- First Name -->
                 <label for="first_name">First Name</label>
                 <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
